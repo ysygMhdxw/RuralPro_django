@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test</title>
+</head>
+<body>
+<table border="1">
+    <thead>
+    <tr>
+        <td>id</td>
+        <td>姓名</td>
+        <td>年龄</td>
+        <td>性别</td>
+        <td>年纪</td>
+    </tr>
+    </thead>
+    <tbody>
+    {% for student in platform_queryset %}
+        <tr>
+            <td>{{ student.Webname }}</td>
+            <td>{{ student.url }}</td>
+            <td>{{ student.pic }}</td>
+            <td>{{ student.introduction }}</td>
+            <td>{{ student.type }}</td>
+        </tr>
+    {% endfor %}
+
+    </tbody>
+</table>
+</body>
+</html>
