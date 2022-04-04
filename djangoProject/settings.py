@@ -12,6 +12,8 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 
 from pathlib import Path
 
+
+# 项目的配置文件，连接数据库
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -27,7 +29,7 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 # Application definition
-
+# 注册app
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -71,11 +73,11 @@ WSGI_APPLICATION = 'djangoProject.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
-
+# 连接mysql数据库
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'ruralpro',  # 连接的数据库
+        'NAME': 'ruralProCopy',  # 连接的数据库
         'HOST': '150.158.163.190',  # mysql的ip地址
         'PORT': 3306,  # mysql的端口
         'USER': 'root',  # mysql的用户名

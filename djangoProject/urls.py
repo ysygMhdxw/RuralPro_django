@@ -16,8 +16,8 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from RuralPro import views
-
+# 将URL和函数的对应关系
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('test',views.platform_list)
+    # path('test',views.platform_list)
 ]

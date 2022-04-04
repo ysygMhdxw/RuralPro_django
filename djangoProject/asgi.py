@@ -11,6 +11,7 @@ import os
 
 from django.core.asgi import get_asgi_application
 
+# 接受网络请求
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'djangoProject.settings')
 
 application = get_asgi_application()

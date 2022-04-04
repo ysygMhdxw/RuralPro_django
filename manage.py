@@ -3,6 +3,7 @@
 import os
 import sys
 
+# 项目的管理、启动项目、创建app、数据管理
 
 def main():
     """Run administrative tasks."""
